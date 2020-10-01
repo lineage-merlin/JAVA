@@ -16,9 +16,9 @@ public class JavaProgram
         int n, r;
         Scanner scan = new Scanner(System.in);
 		
-        n = scan.nextInt();
-        r = scan.nextInt();
+        n = scan.nextInt(); // input
+        r = scan.nextInt(); // input
 		
-        System.out.print((fact(n)/(fact(n-r))));
+        System.out.print((fact(n)/(fact(n-r)))); // output
     }
 }
