@@ -1,0 +1,47 @@
+package GitHub;
+import java.util.Scanner;
+public class ProgramOne {
+	
+	public static void main(String args[]) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("This program is going to test your basic bodmas skills");
+		System.out.println("Enter 1 to enter the test or 0 to exit.");
+		int a = sc.nextInt();
+		
+		if(a == 1) {
+			
+			System.out.println("Welcome to the test: ");
+			System.out.println("Enter a number A: ");
+			int A = sc.nextInt();
+			System.out.println("Enter another number B: ");
+			int B = sc.nextInt();
+			System.out.println("Enter another number C: ");
+			int C = sc.nextInt();
+			System.out.println("Enter another number D: ");
+			int D = sc.nextInt();
+			System.out.println();
+			System.out.println("Enter the value of the equation ( A - B ) + C * D ");
+			int yourAnswer = sc.nextInt();
+			
+			int RightAnswer = ( A - B ) + C * D;
+			
+			if(yourAnswer == RightAnswer) {
+				
+				System.out.println("Congratulations! You have passed the test");
+	
+			}
+			else {
+				System.out.println("You have failed the test, your answer is wrong.");
+			}
+		}
+		
+		else {
+			
+			System.out.println("Thank you for visiting this program");
+		}
+		
+	}
+
+}
